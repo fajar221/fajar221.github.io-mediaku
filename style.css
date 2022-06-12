@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap');
+
+:root {
+  --bg-color: white;
+  --font-color: black;
+  --blue: rgba(67,165,246,255);
+}
+.dark-thema {
+  --bg-color: #0c141e;
+  --font-color: white;
+  --blue: rgba(67,165,246,255);
+}
+body {
+  background-color: var(--bg-color);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  transition: .7s;
+  color: var(--font-color);
+}
+.full-body {
+  height: 100vh;
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-right: 27%;
+  padding-left: 27%;
+}
+.btn-media {
+  background: var(--blue);
+  color: white;
+  text-decoration: none;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  width: 100%;
+  display: block;
+}
+.btn-media:focus, .btn-media:active, .btn-media:hover {
+  color: white;
+  border: none;
+  box-shadow: none;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+.media {
+  color: var(--blue);
+  font-weight: bold;
+  text-decoration: none;
+}
+.link-media a {
+  color: var(--font-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+.mediaku {
+  padding-top: 40px;
+}
+.social-media {
+  padding-top: 10px;
+}
+.footer {
+  padding-top: 70px;
+  bottom: 0;
+  font-size: 12px;
+  color: var(--font-color);
+  text-align: center;
+}
+.btn-theme {
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  position: fixed;
+  text-decoration: none;
+  color: var(--font-color);
+}
+.themas:active, .themas:hover, .themas:focus {
+  color: var(--blue);
+}
+
+@media screen and (max-width: 768px) {
+  .full-body {
+    padding-right: 0;
+    padding-left: 0;
+}
